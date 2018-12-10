@@ -59,7 +59,6 @@ public class Controller {
 			if (alphabetPosition <= ENCRYPTION_SHIFT) {
 				encryptedPosition = ALPHABET_COUNT - encryptedPosition;
 			}
-			System.out.println(c + " " + encryptedPosition);
 			for (Map.Entry<Character, Integer> characterIntegerEntry : encryptionAlphabets.entrySet()) {
 				if(characterIntegerEntry.getValue().equals(encryptedPosition)) {
 					sb.append(characterIntegerEntry.getKey());
